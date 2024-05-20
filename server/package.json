@@ -1,0 +1,21 @@
+{
+  "name": "ahj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever start server.js",
+    "watch": "forever --watch server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "faker": "^5.5.3",
+    "rxjs": "^7.5.0"
+  },
+  "devDependencies": {
+    "forever": "^4.0.3"
+  }
+}
