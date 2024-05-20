@@ -1,4 +1,4 @@
-import { interval, of } from 'rxjs';
+import { interval } from 'rxjs';
 import { switchMap, catchError } from 'rxjs/operators';
 import { ajax } from 'rxjs/ajax';
 
@@ -6,7 +6,7 @@ import { ajax } from 'rxjs/ajax';
 const url = 'http://localhost:3000/messages/unread';
 
 // Интервал опроса в миллисекундах
-const pollingInterval = 5000; // 5 секунд
+const pollingInterval = 5000;
 
 // Функция для получения даты в формате ЧЧ:ММ ДД.ММ.ГГГГ
 const formatDate = (timestamp) => {
@@ -34,7 +34,7 @@ const processMessages = (messages) => {
       <td>${message.from}</td>
       <td>${formatDate(message.received)}</td>
     `;
-    tableBody.insertBefore(row, tableBody.firstChild); // Добавляем новые сообщения сверху
+    tableBody.insertBefore(row, tableBody.firstChild);
   });
 };
 
