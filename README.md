@@ -1,1 +1,1 @@
-![CI](https://github.com/YuriShornikov/RxJS/actions/workflows/web.yml/badge.svg)
+[![Build status](https://ci.appveyor.com/api/projects/status/ry20qgm4kuk23p59?svg=true)](https://ci.appveyor.com/project/YuriShornikov/rxjs)
